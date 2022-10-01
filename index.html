@@ -75,7 +75,7 @@
       <section class="section sec-features">
         <div class="container">
           <h2 class="hidden">Переваги</h2>
-          <ul class="list sec-features">
+          <ul class="list features-list">
             <li class="feature-card">
               <div class="icon-container">
                 <svg class="icon feature-icon">
@@ -451,25 +451,21 @@
           </ul>
         </div>
         <div class="subscribe">
-          <form action="#">
-            <label class="footer-subheading" for="subscribe-input"
-              >Підпишіться на розсилку</label
-            >
-            <div class="subscribe-container">
-              <input
-                type="email"
-                name="subscription e-mail"
-                class="subscribe-input"
-                id="subscribe-input"
-                placeholder="E-mail"
-                required
-              />
-              <button type="submit" class="submit-btn">
-                Підписатися<svg class="telegram">
-                  <use href="./images/icons.svg#telegram"></use>
-                </svg>
-              </button>
-            </div>
+          <p class="footer-subheading">Підпишіться на розсилку</p>
+          <form class="subscribe-container">
+            <input
+              type="email"
+              name="subscription e-mail"
+              class="subscribe-input"
+              id="subscribe-input"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="submit-btn">
+              Підписатися<svg class="telegram">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -481,12 +477,12 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form action="#" class="modal-form" autocomplete="off">
+        <form class="modal-form" autocomplete="off">
           <p class="form-heading">Залиште свої дані, ми вам передзвонимо</p>
           <div class="form-field">
             <label for="name" class="form-label">Ім'я</label>
             <input
-              type="name"
+              type="text"
               name="name"
               id="name"
               class="form-input"
@@ -529,8 +525,8 @@
             class="form-comment"
             placeholder="Введіть текст"
           ></textarea>
-          <div class="form-field">
-            <input
+            <label for="check" class="terms-label">
+              <input
               type="checkbox"
               name="Terms and Conditions agreed"
               value="check"
@@ -538,12 +534,10 @@
               id="check"
               required
             />
-            <span class="checkbox-icon"></span>
-            <label for="check" class="terms-label">
-              Погоджуюся з розсилкою та приймаю
+              <span class="checkbox-icon"></span>
+              <span>Погоджуюся з розсилкою та приймаю 
               <a href="#" class="terms-link">Умови договору</a></label
-            >
-          </div>
+            ></span>
           <button class="modal-submit">Відправити</button>
         </form>
       </div>

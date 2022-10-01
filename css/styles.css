@@ -191,6 +191,9 @@ ul {
   gap: 50px;
   margin-left: auto;
 }
+.features {
+  gap: 30px;
+}
 .feature-about {
   color: var(--grey);
   letter-spacing: 0.03em;
@@ -210,7 +213,6 @@ ul {
 .features-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 0;
 }
 .feature-name {
   font-size: 14px;
@@ -508,11 +510,6 @@ ul {
 .section {
   padding: 94px 0;
 }
-.sec-features {
-  display: flex;
-  gap: 30px;
-  padding-bottom: 0;
-}
 .sec-heading {
   font-size: 36px;
   font-weight: 700;
@@ -610,12 +607,10 @@ ul {
 .checkbox-icon {
   background-image: url(../images/vector.svg);
   background-size: contain;
-  display: inline-block;
-  height: 15px;
-  left: 12px;
+  display: block;
   margin-right: 8px;
-  position: absolute;
   transition: background-image 250ms var(--timing-function);
+  height: 15px;
   width: 16px;
 }
 .checkbox:checked + .checkbox-icon {
@@ -640,7 +635,7 @@ ul {
   color: var(--black-heading);
   font-size: 20px;
   font-weight: 700;
-  line-height: 23px;
+  line-height: 1.15;
   margin-bottom: 12px;
   text-align: center;
 }
@@ -702,10 +697,8 @@ ul {
   text-align: center;
 }
 .terms-label {
-  cursor: pointer;
-  display: inline-block;
-  padding-left: 36px;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .terms-link {
   color: var(--accent-blue);
